@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Love Songs Player</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="music-card">
+
+<div class="left">
+
+<div class="cover">
+
+<img
+id="cover-image"
+src="images/cover1.jpg"
+alt="Album Cover">
+
+</div>
+
+<h2 id="song-title">
+Until I Found You
+</h2>
+
+<p id="artist-name">
+Stephen Sanchez
+</p>
+
+<div class="time">
+
+<span id="current-time">
+
+0:00
+
+</span>
+
+<span id="duration">
+
+0:00
+
+</span>
+
+</div>
+
+<input
+type="range"
+id="progress-bar"
+value="0"
+min="0"
+max="100">
+
+<div class="controls">
+
+<button id="prev">
+
+<i class="fa-solid fa-backward-step"></i>
+
+</button>
+
+<button id="play">
+
+<i class="fa-solid fa-play"></i>
+
+</button>
+
+<button id="next">
+
+<i class="fa-solid fa-forward-step"></i>
+
+</button>
+
+</div>
+
+<div class="volume">
+
+<i class="fa-solid fa-volume-low"></i>
+
+<input
+type="range"
+id="volume"
+min="0"
+max="1"
+step="0.01"
+value="1">
+
+<i class="fa-solid fa-volume-high"></i>
+
+</div>
+
+</div>
+
+<div class="right">
+
+<h2>
+
+<i class="fa-solid fa-heart"></i>
+
+Playlist
+
+</h2>
+
+<div
+class="playlist"
+id="playlist">
+
+<div
+class="song active"
+data-index="0">
+
+<img src="images/cover1.jpg">
+
+<div>
+
+<h4>Until I Found You</h4>
+
+<p>Stephen Sanchez</p>
+
+</div>
+
+<span>2:58</span>
+
+</div>
+
+<div
+class="song"
+data-index="1">
+
+<img src="images/cover2.jpg">
+
+<div>
+
+<h4>Shape of You</h4>
+
+<p>Ed Sheeran</p>
+
+</div>
+
+<span>4:23</span>
+
+</div>
+
+<div
+class="song"
+data-index="2">
+
+<img src="images/cover3.jpg">
+
+<div>
+
+<h4>Beauty and a Beat</h4>
+
+<p>Justin Beiber</p>
+
+</div>
+
+<span>3:58</span>
+
+</div>
+
+<div
+class="song"
+data-index="3">
+
+<img src="images/cover4.jpg">
+
+<div>
+
+<h4>Night Changes</h4>
+
+<p>One Direction</p>
+
+</div>
+
+<span>3:46</span>
+
+</div>
+
+<div
+class="song"
+data-index="4">
+
+<img src="images/cover5.jpg">
+
+<div>
+
+<h4>Love Story</h4>
+
+<p>Taylor Swift</p>
+
+</div>
+
+<span>3:56</span>
+
+</div>
+
+<div
+class="song"
+data-index="5">
+
+<img src="images/cover6.jpg">
+
+<div>
+
+<h4>her(ft. ZVC)</h4>
+
+<p>JVKE</p>
+
+</div>
+
+<span>2:24</span>
+
+</div>
+
+<div
+class="song"
+data-index="6">
+
+<img src="images/cover7.jpg">
+
+<div>
+
+<h4>Cupid</h4>
+
+<p>Fifty Fifty</p>
+
+</div>
+
+<span>2:55</span>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<audio id="audio"></audio>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

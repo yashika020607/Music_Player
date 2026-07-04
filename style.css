@@ -1,0 +1,353 @@
+/* Google Font */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#FFE5EC,#F8D7FF,#EBD4FF);
+
+    overflow:hidden;
+
+}
+
+.container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+.music-card{
+
+    width:1150px;
+
+    height:700px;
+
+    display:flex;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,0.18);
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.18);
+
+}
+.left{
+
+    width:42%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:40px;
+
+    background:rgba(255,255,255,.25);
+
+}
+.cover{
+
+    width:280px;
+
+    height:280px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    margin-bottom:30px;
+
+    border:8px solid rgba(255,255,255,.6);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+
+}
+
+.cover img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+#song-title{
+
+    margin-top:15px;
+
+    font-size:36px;
+
+    color:#4A235A;
+
+    font-weight:700;
+
+}
+
+#artist-name{
+
+    margin-top:8px;
+
+    color:#7D5A73;
+
+    font-size:20px;
+
+}
+.time{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:30px;
+
+    color:#5C5470;
+
+    font-size:15px;
+
+}
+#progress-bar{
+
+    width:100%;
+
+    margin-top:10px;
+
+    cursor:pointer;
+
+    accent-color:#FF4F8B;
+
+}
+.controls{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:35px;
+
+    margin-top:35px;
+
+}
+.controls button{
+
+    background:none;
+
+    border:none;
+
+    font-size:28px;
+
+    color:#6B4F67;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.controls button:hover{
+
+    color:#FF4F8B;
+
+    transform:scale(1.15);
+
+}
+#play{
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:#FF4F8B;
+
+    color:white;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+    box-shadow:0 10px 30px rgba(255,79,139,.45);
+
+    transition:.3s;
+
+}
+
+#play:hover{
+
+    transform:scale(1.1);
+
+}
+.volume{
+
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-top:40px;
+
+}
+
+.volume input{
+
+    flex:1;
+
+    accent-color:#FF4F8B;
+
+}
+.right{
+
+    width:58%;
+
+    padding:40px;
+
+    overflow-y:auto;
+
+}
+
+.right h2{
+
+    color:#7A2E63;
+
+    margin-bottom:25px;
+
+}.song{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:15px;
+
+    margin-bottom:15px;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.song:hover{
+
+    background:#FFD8E8;
+
+}
+
+.song img{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:12px;
+
+    object-fit:cover;
+
+}
+
+.song div{
+
+    flex:1;
+
+    margin-left:18px;
+
+}
+
+.song h4{
+
+    color:#4A235A;
+
+}
+
+.song p{
+
+    color:#8A7082;
+
+    font-size:14px;
+
+}
+
+.song span{
+
+    color:#7D5A73;
+
+}
+.song.active{
+
+    background:#FFEDF4;
+
+    border-left:6px solid #FF4F8B;
+
+}
+.right::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.right::-webkit-scrollbar-thumb{
+
+    background:#FF8DB5;
+
+    border-radius:20px;
+
+}
+.rotate{
+
+    animation:spin 12s linear infinite;
+
+}
+
+@keyframes spin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
